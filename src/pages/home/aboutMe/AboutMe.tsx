@@ -18,7 +18,6 @@ const AboutMe: React.FC = () => {
           <P>
           טקסטים
           </P>
-     
         </Article>
       </Row>
     </Container>
@@ -67,6 +66,7 @@ const Img = styled.img`
   margin-bottom: 20px;
   border: 5px solid yellow;
   margin-right: 0px;
+  background-color: red;
 
   ${DESKTOP_MQ} {
     margin-top: 0;

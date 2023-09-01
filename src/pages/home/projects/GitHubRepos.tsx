@@ -9,6 +9,7 @@ import Colors from "../../../theme/Colors";
 import { DESKTOP_MQ, mobileThreshold } from "../../../theme/theme.constants";
 import { Card } from "./card";
 import { useScreenSize } from "../../../hooks/useScreenSize";
+import { log } from "console";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -63,6 +64,7 @@ const GitHubRepos: React.FC = () => {
         <>
           <Crads>
             {(items || []).map((props: any, i: number) => {
+                    console.log({items})
               return <Card key={i} {...props} />;
             })}
           </Crads>
@@ -84,6 +86,7 @@ const GitHubRepos: React.FC = () => {
           >
             <Crads>
               {(items || []).map((props: any, i: number) => {
+          
                 return <Card key={i} {...props} />;
               })}
             </Crads>

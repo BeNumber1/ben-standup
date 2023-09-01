@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { FC } from "react";
 import { DESKTOP_MQ } from "../../../../theme/theme.constants";
+import { log } from "console";
 interface Props {
   image: string;
   title: string;
@@ -15,10 +16,10 @@ const Card: FC<Props> = ({
   description,
   link,
   updatedAt,
-  type = "",
+  type,
 }) => {
   //   const { theme } = useThemeState();
-
+console.log({type})
   return type === "vertical" ? (
     <IframeVertical
       src={link}
@@ -48,7 +49,7 @@ const IframeLandscape = styled.iframe`
 
 const IframeVertical = styled.iframe`
   width: 100%;
-  max-width: 315px;
+  width: 315px;
   height: 500px;
   margin-bottom: 20px;
   border-radius: 20px;
