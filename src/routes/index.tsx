@@ -24,10 +24,10 @@ const IndexRouter: React.FC = () => {
                         <Switch>
                             <Route
                                 exact
-                                path={[`/ben-standup`]}
+                                path={[`/`, `/ben-standup`]}
                                 component={Home}
                             />
-                            {/* <Route component={NotFound} /> */}
+                            <Route component={NotFound} />
                         </Switch>
                     </Suspense>
                 </Layout>

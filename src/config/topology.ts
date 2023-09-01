@@ -15,7 +15,7 @@ const topology = () => {
             gitHubRepos: '/api/repos.json',
         },
         development: {
-            baseUrl: 'http://localhost:3000',
+            baseUrl: 'http://localhost:3000/ben-standup',
             gitHubRepos: '/api/repos.json',
         },
     };
