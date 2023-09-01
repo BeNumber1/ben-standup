@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ben-standup/static/css/main.357572fe.css",
+    "main.js": "/ben-standup/static/js/main.ca9bf579.js",
+    "static/js/787.67359487.chunk.js": "/ben-standup/static/js/787.67359487.chunk.js",
+    "index.html": "/ben-standup/index.html",
+    "main.357572fe.css.map": "/ben-standup/static/css/main.357572fe.css.map",
+    "main.ca9bf579.js.map": "/ben-standup/static/js/main.ca9bf579.js.map",
+    "787.67359487.chunk.js.map": "/ben-standup/static/js/787.67359487.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.357572fe.css",
+    "static/js/main.ca9bf579.js"
+  ]
+}
