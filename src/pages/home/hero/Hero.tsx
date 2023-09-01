@@ -7,7 +7,7 @@ import Colors from "../../../theme/Colors";
 import { DESKTOP_MQ } from "../../../theme/theme.constants";
 import topology from "../../../config/topology";
 
-export const FACEBOOK_LINK = "https://www.facebook.com/alonalush";
+export const FACEBOOK_LINK = "https://www.facebook.com/bbiton";
 export const WHATSAPP_LINK = "whatsapp://send?text=שלום בן פניתי בנושא מופע סטנדאפ אנא חזור אליי.&phone=972523255172";
 
 const Hero: React.FC = () => {
@@ -29,27 +29,8 @@ const Hero: React.FC = () => {
         </div>
       </Row>
       <RowContact>
-        <Alon />
+        <DIV />
         <Img src={`${links.baseUrl}/images/alon.png`} />
-
-        {/* <Link href={CV_LINK} data-tip data-for="cv">
-                    <StyledIoDocumentAttachOutline color={Colors.white} size={50} />
-                </Link>
-                <Link href={GITHUB_LINK} target="_blank" data-tip data-for="github">
-                    <span> {githubIcon(50)}</span>
-                </Link>
-                <Link href={LINKEDIN_LINK} target="_blank" data-tip data-for="linkedin">
-                    <span>{linkedinIcon(50)}</span>
-                </Link>
-                <ReactTooltip id="cv" place="bottom" effect="solid">
-                    My CV
-                </ReactTooltip>
-                <ReactTooltip id="linkedin" place="bottom" effect="solid">
-                    Linkedin Profile
-                </ReactTooltip>
-                <ReactTooltip id="github" place="bottom" effect="solid">
-                    GitHub Profile
-                </ReactTooltip> */}
       </RowContact>
     </Container>
   );
@@ -74,7 +55,7 @@ const Img = styled.img`
   }
 `;
 
-const Alon = styled.div`
+const DIV = styled.div`
   height: 900px;
   width: 900px;
   border-radius: 50%;
