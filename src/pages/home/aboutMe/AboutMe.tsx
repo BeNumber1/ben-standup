@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
     <Container id="about">
       <H2 theme={theme}>מי אני</H2>
       <Row>
-        <Img src={`${links.baseUrl}/images/img2.png`} alt="בן ביטון" />
+        <Img src={`${links.baseUrl}/images/img3.png`} alt="בן ביטון" />
         <Article>
           <P>
           טקסטים

@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
       </Row>
       <RowContact>
         <DIV />
-        <Img src={`${links.baseUrl}/images/alon.png`} />
+        <Img src={`${links.baseUrl}/images/ben.png`} />
       </RowContact>
     </Container>
   );
@@ -39,18 +39,20 @@ const Hero: React.FC = () => {
 export default Hero;
 
 const Img = styled.img`
-  height: 85%;
+  height: auto;
+  width: 100%;
   transform-origin: bottom center;
   position: absolute;
   bottom: 0;
-  left: 55%;
+  left: 54%;
   z-index: 0;
-  transform: scale(1.3) translateY(90px) translateX(-42%);
+  transform: scale(1.2) translateY(40px) translateX(-42%);
 
   ${DESKTOP_MQ} {
     transform-origin: bottom center;
-    height: 120%;
-    left: 10%;
+    height: 98%;
+    width: auto;
+    left: 3%;
     transform: unset;
   }
 `;
