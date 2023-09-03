@@ -2,7 +2,7 @@
   "name": "ben-standup",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://BeNumber1.github.io/ben-standup",
+  "homepage": "https://standup.benbiton.com",
   "dependencies": {
     "@ant-design/icons": "^4.6.4",
     "@emotion/react": "^11.4.1",
