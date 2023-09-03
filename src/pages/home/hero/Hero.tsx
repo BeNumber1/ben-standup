@@ -8,8 +8,11 @@ import { DESKTOP_MQ } from "../../../theme/theme.constants";
 import topology from "../../../config/topology";
 
 export const FACEBOOK_LINK = "https://www.facebook.com/bbiton";
-export const WHATSAPP_LINK = "whatsapp://send?text=שלום בן פניתי בנושא מופע סטנדאפ אנא חזור אליי.&phone=972523255172";
-
+export const WHATSAPP_LINK =
+  "whatsapp://send?text=שלום בן פניתי בנושא מופע סטנדאפ אנא חזור אליי.&phone=972523255172";
+export const YOUTUBE_LINK = "https://www.youtube.com/@Ben.Standup/videos";
+export const TIKTOK_LINK = "https://www.tiktok.com/@ben.standup";
+export const INSTAGRAM_LINK = "";
 const Hero: React.FC = () => {
   const links = topology();
   const { theme } = useThemeState();
@@ -19,7 +22,7 @@ const Hero: React.FC = () => {
       <Row>
         <H1 theme={theme}>בן ביטון</H1>
         <P>מופע סטנדאפ</P>
-        <div style={{display:"flex"}}>
+        <div style={{ display: "flex" }}>
           <StyledAnchorLink href="#about" theme={theme}>
             מי אני
           </StyledAnchorLink>
@@ -168,7 +171,7 @@ const StyledAnchorLink = styled(AnchorLink)<{ theme: ThemeType }>`
   align-items: center;
   font-weight: bold;
 
-  &:last-child{
+  &:last-child {
     margin-inline-start: 20px;
   }
 

@@ -1,29 +1,67 @@
 import styled from "@emotion/styled";
 import { FC, useEffect, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { FaBars } from "react-icons/fa";
+import {
+  FaBars,
+  FaFacebookSquare,
+  FaTiktok,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import { BsWhatsapp, BsYoutube } from "react-icons/bs";
+import topology from "../../../config/topology";
 import { useScreenSize } from "../../../hooks/useScreenSize";
+import {
+  FACEBOOK_LINK,
+  TIKTOK_LINK,
+  WHATSAPP_LINK,
+  YOUTUBE_LINK,
+} from "../../../pages/home/hero/Hero";
 import Colors from "../../../theme/Colors";
 import { DESKTOP_MQ, mobileThreshold } from "../../../theme/theme.constants";
-import topology from "../../../config/topology";
 
 const Nav: FC = () => {
   const links = topology();
   const { width } = useScreenSize();
   const [open, setOpen] = useState(false);
+  const [iconsColor, setIconsColor] = useState("white");
 
   useEffect(() => {
     if (width > mobileThreshold) {
       setOpen(false);
+      setIconsColor("white");
     }
+    setIconsColor("white");
   }, [width]);
 
   return (
     <Container show={open}>
-      <Logo
-        src={`${links.baseUrl}/images/logo.png`}
-        alt="Full-Stack Developer"
-      />
+      <LinksRow>
+        {/* <A href={""}>
+          <FaInstagramSquare size={30} color={iconsColor} />
+        </A> */}
+        {width > mobileThreshold && (
+          <>
+            <A href={WHATSAPP_LINK} target="_blank">
+              <BsWhatsapp size={30} color={iconsColor} />
+            </A>
+            <A href={YOUTUBE_LINK} target="_blank">
+              <BsYoutube size={30} color={iconsColor} />
+            </A>
+            <A href={TIKTOK_LINK} target="_blank">
+              <FaTiktok size={30} color={iconsColor} />
+            </A>
+            <A href={FACEBOOK_LINK} target="_blank">
+              <FaFacebookSquare size={30} color={iconsColor} />
+            </A>
+          </>
+        )}
+        <a href={"https://standup.alonalush.com"}>
+          <Logo
+            src={`${links.baseUrl}/images/logo.png`}
+            alt="Full-Stack Developer"
+          />
+        </a>
+      </LinksRow>
       <NavList show={open}>
         <li>
           <StyledAnchorLink href="#about" onClick={() => setOpen(false)}>
@@ -31,15 +69,20 @@ const Nav: FC = () => {
           </StyledAnchorLink>
         </li>
         <li>
+          <StyledAnchorLink href="#show-types" onClick={() => setOpen(false)}>
+            סוגי מופעים
+          </StyledAnchorLink>
+        </li>
+        <li>
           <StyledAnchorLink href="#projects" onClick={() => setOpen(false)}>
             סרטונים
           </StyledAnchorLink>
         </li>
-        <li>
+        {/* <li>
           <StyledAnchorLink href="#contact-me" onClick={() => setOpen(false)}>
             הזמינו מופע
           </StyledAnchorLink>
-        </li>
+        </li> */}
         {/* {width > mobileThreshold && (
                     <li>
                         <ThemeToggle />
@@ -60,6 +103,30 @@ const Nav: FC = () => {
 
 export default Nav;
 
+const LinksRow = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  ${DESKTOP_MQ} {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+
+const A = styled.a`
+  margin-inline: 6px;
+  &:hover * {
+    color: yellow;
+    fill: yellow;
+  }
+  ${DESKTOP_MQ} {
+  }
+`;
+
 const Container = styled.nav<{ show: boolean }>`
   display: flex;
 
@@ -72,7 +139,7 @@ const Container = styled.nav<{ show: boolean }>`
     flex-direction: row-reverse;
     justify-content: space-between;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    height: auto;
+    height: 70px;
   }
 `;
 
@@ -133,8 +200,6 @@ const StyledAnchorLink = styled(AnchorLink)`
   cursor: pointer;
   color: ${Colors.white};
 `;
-
-
 
 const Hamburger = styled.button`
   cursor: pointer;
