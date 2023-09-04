@@ -55,7 +55,7 @@ const Nav: FC = () => {
             </A>
           </>
         )}
-        <a href={"https://standup.alonalush.com"}>
+        <a href={"https://standup.benbiton.com"}>
           <Logo
             src={`${links.baseUrl}/images/logo.png`}
             alt="Full-Stack Developer"
