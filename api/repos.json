@@ -2,6 +2,24 @@
     {
     "title": "",
     "description": "",
+    "link": "https://www.youtube.com/embed/0XuFNKwt22g",
+    "type": "horizontal"
+  },  
+        {
+    "title": "",
+    "description": "",
+    "link": "https://www.youtube.com/embed/TbjrmSe9GUU",
+    "type": "horizontal"
+  },  
+            {
+    "title": "",
+    "description": "",
+    "link": "https://www.youtube.com/embed/vg6b6IGxQ34",
+    "type": "horizontal"
+  },  
+    {
+    "title": "",
+    "description": "",
     "link": "https://www.youtube.com/embed/C6QGq-tar1M",
     "type": "vertical"
   },
@@ -15,24 +33,6 @@
     "title": "",
     "description": "",
     "link": "https://www.youtube.com/embed/bi2TDyeO_rE",
-    "type": "vertical"
-  },{
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/Qjpedw-seFw",
-    "type": "vertical"
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/OXZfnOnmwKc",
-    "type": "vertical"
-  },
-
-  {
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/7ZAZwULmWvA",
     "type": "vertical"
   },
   {
