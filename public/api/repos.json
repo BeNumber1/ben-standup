@@ -35,6 +35,24 @@
     "link": "https://www.youtube.com/embed/s1wO07fr748",
     "type": "vertical"
   },
+      {
+    "title": "",
+    "description": "",
+    "link": "https://www.youtube.com/embed/oCreZthVzN8",
+    "type": "vertical"
+  },
+  {
+    "title": "",
+    "description": "",
+    "link": "https://www.youtube.com/embed/fIvUZRJ4LG0",
+    "type": "vertical"
+  },
+  {
+    "title": "",
+    "description": "",
+    "link": "https://www.youtube.com/embed/UyO_eLA6E8k",
+    "type": "vertical"
+  },
   {
     "title": "",
     "description": "",
@@ -52,23 +70,5 @@
     "description": "",
     "link": "https://www.youtube.com/embed/flhuI9XhL0E",
     "type": "horizontal"
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/oCreZthVzN8",
-    "type": "Vertical"
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/fIvUZRJ4LG0",
-    "type": "Vertical"
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://www.youtube.com/embed/UyO_eLA6E8k",
-    "type": "Vertical"
   }
 ]
